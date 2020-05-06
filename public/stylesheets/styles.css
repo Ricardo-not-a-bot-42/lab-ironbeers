@@ -5,3 +5,105 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f7f9f9;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #2081c3;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+}
+
+nav a {
+  margin: 0 1.3em;
+  font-size: 1.5em;
+  color: #f7f9f9;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #0a2c42;
+  color: #f7f9f9;
+  padding: 0.3em;
+}
+
+footer h3 {
+  margin: 1.3em;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index * {
+  margin: 1em;
+}
+
+.index a {
+  background-color: #2081c3;
+  text-decoration: none;
+  color: #f7f9f9;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.beer-info {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+  justify-content: center;
+  width: 70%;
+}
+
+.beer-image {
+  max-width: 5em;
+}
+
+.beer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info-container {
+  margin: 2.5em;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.tagline {
+  color: #bfbfbf;
+}
+
+.beer-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.beer-list ul li {
+  width: 30%;
+  font-size: 0.5em;
+}
+
+.extra-info h2 {
+  font-size: 2em;
+}
+
+.extra-info li {
+  font-size: 1.5em;
+}
+
+.extra-info p {
+  font-size: 1.5em;
+}

@@ -1,0 +1,33 @@
+<div class="beer-info">
+{{> beerPartial beer}}
+
+
+<div class="extra-info">
+<h2>Information</h2>
+<ul>
+  <li>ABV: {{ beer.abv }}</li>
+  <li>IBU: {{ beer.ibu }}</li>
+  <li>pH: {{ beer.ph }}</li>
+  <li>Volume: {{ beer.volume.value }} {{ beer.volume.unit }}</li>
+</ul>
+<h2>Ingredients</h2>
+<h3>Malt:</h3>
+<ul>
+  {{#each beer.ingredients.malt}}
+  <li>{{this.name}}, amount: {{this.amount.value}}{{this.amount.unit}}</li>
+  {{/each}}
+</ul>
+
+<h3>Hops:</h3>
+<ul>
+  {{#each beer.ingredients.hops}}
+  <li>{{this.name}}, amount: {{this.amount.value}}{{this.amount.unit}}</li>
+  {{/each}}
+</ul>
+
+<h3>Yeast:</h3>
+<ul>
+  <li>{{beer.ingredients.yeast}}</li>
+</ul>
+</div>
+</div>
